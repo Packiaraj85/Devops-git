@@ -1,0 +1,16 @@
+297  curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+  298  ls
+  299  ./kk create cluster --with-kubernetes v1.22.12 --with-kubesphere v3.4.1
+  300  ll kk
+  301  sudo ./kk create cluster --with-kubernetes v1.22.12 --with-kubesphere v3.4.1
+  302  sudo apt install ipset ipvsadm chrony cephclient glusterfsclient
+  303  sudo apt install ipset ipvsadm chrony
+  304  sudo ./kk create cluster --with-kubernetes v1.22.12 --with-kubesphere v3.4.1
+  305  sudo apt update
+  306  sudo apt upgrade -y
+  307  mkdir -p $HOME/.kube
+  308  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  309  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+  310  kubectl get all -A
+  311  kubectl --help
+  312  kubectl cluster-info
